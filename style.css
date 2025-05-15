@@ -13,7 +13,7 @@ body, html {
   top: -60px; /* Start off-screen */
   width: 100%;
   z-index: 1000;
-  background-color: rgba(18, 18, 18, 0.8);
+  background-color: rgba(18, 18, 18, 0);
   backdrop-filter: blur(10px);
   opacity: 0;
   padding: 15px 0;
@@ -21,7 +21,7 @@ body, html {
 }
 
 .navbar-brand {
-  color: #ff3b4e !important;
+  color: #64b4f4 !important;
   font-weight: bold;
   font-size: 1.5rem;
   padding-left: 20px;
@@ -45,7 +45,7 @@ body, html {
 }
 
 .navbar-nav .nav-link:hover {
-  color: #ff3b4e !important;
+  color: #64b4f4 !important;
 }
 
 .navbar-toggler {
@@ -103,8 +103,8 @@ body, html {
 .btn {
   padding: 12px 30px;
   background-color: transparent;
-  color: #ff3b4e;
-  border: 2px solid #ff3b4e;
+  color: #64b4f4;
+  border: 2px solid #64b4f4;
   border-radius: 4px;
   font-size: 1rem;
   cursor: pointer;
@@ -125,7 +125,7 @@ body, html {
   left: 0;
   width: 0%;
   height: 100%;
-  background-color: #ff3b4e;
+  background-color: #64b4f4;
   transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
   z-index: -1;
   transform: skewX(-20deg);
@@ -152,7 +152,7 @@ body, html {
 }
 
 .name {
-  color: #ff3b4e;
+  color: #64b4f4;
   display: inline;
 }
 
