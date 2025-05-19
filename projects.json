@@ -1,0 +1,64 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "Personal Portfolio Website",
+      "description": "A modern portfolio website featuring animated particles, smooth scrolling, and responsive design. Built with HTML, CSS, and JavaScript.",
+      "image": "project-portfolio.jpg",
+      "category": "frontend",
+      "technologies": ["HTML5", "CSS3", "JavaScript", "Bootstrap"],
+      "github": "https://github.com/username/portfolio",
+      "demo": "https://yourportfolio.com"
+    },
+    {
+      "id": 2,
+      "title": "E-commerce Platform",
+      "description": "A full-featured e-commerce platform with product listings, cart functionality, user authentication, and payment processing.",
+      "image": "project-ecommerce.jpg",
+      "category": "fullstack",
+      "technologies": ["Vue.js", "Python", "Flask", "MongoDB", "Stripe API"],
+      "github": "https://github.com/username/ecommerce-app",
+      "demo": "https://your-ecommerce-demo.com"
+    },
+    {
+      "id": 3,
+      "title": "Weather Dashboard",
+      "description": "An interactive weather application showing current conditions and forecasts using weather API data with interactive charts.",
+      "image": "project-weather.jpg",
+      "category": "frontend",
+      "technologies": ["JavaScript", "HTML5", "CSS3", "Chart.js", "Weather API"],
+      "github": "https://github.com/username/weather-app",
+      "demo": "https://your-weather-app.com"
+    },
+    {
+      "id": 4,
+      "title": "Task Management API",
+      "description": "RESTful API for task management with user authentication, task creation, updating, and deletion capabilities.",
+      "image": "project-task-api.jpg",
+      "category": "backend",
+      "technologies": ["Python", "Django", "PostgreSQL", "JWT Auth"],
+      "github": "https://github.com/username/task-api",
+      "demo": "https://api-docs.yourtaskmanager.com"
+    },
+    {
+      "id": 5,
+      "title": "Real-time Chat Application",
+      "description": "A chat application supporting real-time messaging, user presence, and file sharing using WebSockets.",
+      "image": "project-chat.jpg",
+      "category": "fullstack",
+      "technologies": ["Vue.js", "Node.js", "Express", "Socket.io", "MongoDB"],
+      "github": "https://github.com/username/chat-app",
+      "demo": "https://yourchatapp.com"
+    },
+    {
+      "id": 6,
+      "title": "Blog Platform",
+      "description": "A content management system for blogs with rich text editing, image uploads, and comment functionality.",
+      "image": "project-blog.jpg",
+      "category": "fullstack",
+      "technologies": ["JavaScript", "Node.js", "Express", "MongoDB", "Cloudinary"],
+      "github": "https://github.com/username/blog-platform",
+      "demo": "https://yourblogplatform.com"
+    }
+  ]
+}

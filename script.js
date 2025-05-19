@@ -262,3 +262,171 @@ document.addEventListener('DOMContentLoaded', function () {
     setTimeout(makeAboutSectionVisible, 1000);
   });
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Projects Section JS
+document.addEventListener('DOMContentLoaded', function() {
+  // Function to load projects from JSON file
+  async function loadProjects() {
+    try {
+      const response = await fetch('projects.json');
+      if (!response.ok) {
+        throw new Error(`HTTP error! Status: ${response.status}`);
+      }
+      const data = await response.json();
+      return data.projects;
+    } catch (error) {
+      console.error('Error loading projects:', error);
+      return [];
+    }
+  }
+
+  // Function to create project cards
+  function createProjectCards(projects) {
+    const projectsContainer = document.getElementById('projectsContainer');
+    
+    if (!projectsContainer) return;
+    
+    projectsContainer.innerHTML = '';
+    
+    projects.forEach((project, index) => {
+      const card = document.createElement('div');
+      card.className = 'project-card';
+      card.dataset.category = project.category;
+      card.dataset.delay = (index * 100).toString();
+      
+      // Handling image URLs - use placeholder if image isn't available
+      const imageUrl = project.image || `/api/placeholder/400/225?text=${encodeURIComponent(project.title)}`;
+      
+      // Create shorter description if too long (mobile-friendly)
+      let description = project.description;
+      if (description.length > 120) {
+        description = description.substring(0, 117) + '...';
+      }
+      
+      card.innerHTML = `
+        <div class="project-img-container">
+          <img src="${imageUrl}" alt="${project.title}" class="project-img">
+        </div>
+        <div class="project-content">
+          <h3 class="project-title">${project.title}</h3>
+          <p class="project-description">${description}</p>
+          <div class="tech-stack">
+            ${project.technologies.map(tech => `<span class="tech-tag">${tech}</span>`).join('')}
+          </div>
+          <div class="project-links">
+            <a href="${project.github}" target="_blank" class="project-link">
+              <i class="fab fa-github"></i> GitHub
+            </a>
+            <a href="${project.demo}" target="_blank" class="project-link">
+              <i class="fas fa-external-link-alt"></i> Live Demo
+            </a>
+          </div>
+        </div>
+      `;
+      
+      projectsContainer.appendChild(card);
+    });
+    
+    // Make the container visible
+    projectsContainer.classList.add('visible');
+    
+    // Add staggered animation to project cards
+    const projectCards = document.querySelectorAll('.project-card');
+    projectCards.forEach(card => {
+      setTimeout(() => {
+        card.classList.add('visible');
+      }, parseInt(card.dataset.delay || '0'));
+    });
+  }
+
+  // Function to filter projects
+  function filterProjects(category) {
+    const projectCards = document.querySelectorAll('.project-card');
+    
+    projectCards.forEach(card => {
+      if (category === 'all' || card.dataset.category === category) {
+        card.style.display = 'flex';
+      } else {
+        card.style.display = 'none';
+      }
+    });
+  }
+
+  // Initialize the projects section
+  async function initProjectsSection() {
+    const projects = await loadProjects();
+    
+    if (projects.length > 0) {
+      createProjectCards(projects);
+      
+      // Set up filter buttons
+      const filterButtons = document.querySelectorAll('.filter-btn');
+      filterButtons.forEach(button => {
+        button.addEventListener('click', function() {
+          // Update active class
+          filterButtons.forEach(btn => btn.classList.remove('active'));
+          this.classList.add('active');
+          
+          // Filter projects
+          const category = this.getAttribute('data-filter');
+          filterProjects(category);
+        });
+      });
+    }
+  }
+
+  // Handle project section visibility
+  function handleProjectsScrollAnimation() {
+    const projectsSection = document.querySelector('.projects-section');
+    const sectionTitle = document.querySelector('.projects-section .section-title');
+    const projectsWrapper = document.querySelector('.projects-wrapper');
+    
+    if (!projectsSection || !sectionTitle || !projectsWrapper) return;
+    
+    function isInViewport(element) {
+      const rect = element.getBoundingClientRect();
+      return (
+        rect.top <= (window.innerHeight || document.documentElement.clientHeight) * 1.2 && 
+        rect.bottom >= 0
+      );
+    }
+    
+    if (isInViewport(projectsSection)) {
+      sectionTitle.classList.add('visible');
+      
+      setTimeout(() => {
+        projectsWrapper.classList.add('visible');
+        
+        const projectCards = document.querySelectorAll('.project-card');
+        projectCards.forEach((card, index) => {
+          setTimeout(() => {
+            card.classList.add('visible');
+          }, 100 * index);
+        });
+      }, 300);
+    }
+  }
+
+  // Initialize the section
+  initProjectsSection();
+  
+  // Add scroll event listener for animations
+  window.addEventListener('scroll', handleProjectsScrollAnimation);
+  
+  // Ensure animations trigger if section is already in viewport
+  setTimeout(handleProjectsScrollAnimation, 1000);
+});
