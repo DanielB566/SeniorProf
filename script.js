@@ -430,3 +430,54 @@ document.addEventListener('DOMContentLoaded', function() {
   // Ensure animations trigger if section is already in viewport
   setTimeout(handleProjectsScrollAnimation, 1000);
 });
+
+
+
+
+
+
+
+
+// Add this function to ensure the projects section title is visible
+function makeProjectsSectionVisible() {
+  const sectionTitle = document.querySelector('.projects-section .section-title');
+  const filterContainer = document.querySelector('.filter-container');
+  const projectsWrapper = document.querySelector('.projects-wrapper');
+  
+  // Force show the section title
+  if (sectionTitle) {
+    sectionTitle.classList.add('visible');
+  }
+  
+  // Show the filter buttons with a slight delay
+  if (filterContainer) {
+    setTimeout(() => {
+      filterContainer.style.opacity = '1';
+      filterContainer.style.transform = 'translateY(0)';
+    }, 200);
+  }
+  
+  // Make the projects wrapper visible with a slight delay
+  if (projectsWrapper) {
+    setTimeout(() => {
+      projectsWrapper.classList.add('visible');
+      
+      // Make all project cards visible with staggered animation
+      const projectCards = document.querySelectorAll('.project-card');
+      projectCards.forEach((card, index) => {
+        setTimeout(() => {
+          card.classList.add('visible');
+        }, 100 * index);
+      });
+    }, 400);
+  }
+}
+
+// Make sure to call this function in your document ready handlers
+// Add these lines to your document.addEventListener('DOMContentLoaded', function() {...}):
+
+// At the end of your initProjectsSection function, add:
+setTimeout(makeProjectsSectionVisible, 500);
+
+// Also, modify your window.addEventListener('load', function()...) to include:
+setTimeout(makeProjectsSectionVisible, 1000);
