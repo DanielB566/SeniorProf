@@ -373,6 +373,7 @@ document.addEventListener('DOMContentLoaded', function() {
     if (projects.length > 0) {
       createProjectCards(projects);
       
+      
       // Set up filter buttons
       const filterButtons = document.querySelectorAll('.filter-btn');
       filterButtons.forEach(button => {
