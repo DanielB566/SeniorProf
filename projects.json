@@ -52,13 +52,13 @@
     },
     {
       "id": 6,
-      "title": "Blog Platform",
-      "description": "A content management system for blogs with rich text editing, image uploads, and comment functionality.",
+      "title": "JerseyCTF NJCCIC Challenges 2025",
+      "description": "I helped build CTFs (coding based) challeges for NJCCIC for the 2025 JerseyCTF.",
       "image": "project-blog.jpg",
-      "category": "fullstack",
-      "technologies": ["JavaScript", "Node.js", "Express", "MongoDB", "Cloudinary"],
-      "github": "https://github.com/username/blog-platform",
-      "demo": "https://yourblogplatform.com"
+      "category": "backend",
+      "technologies": ["JavaScript", "Python", "PostgreSQL", "Node.js", "Vue.js"],
+      "github": "https://github.com/jerseyctf/jerseyctf-njccic-challenges",
+      "demo": "https://github.com/jerseyctf/jerseyctf-njccic-challenges/tree/JCTFV/web/Layers-Of-Lies"
     }
   ]
 }
