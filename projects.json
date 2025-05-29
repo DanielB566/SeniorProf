@@ -2,23 +2,23 @@
   "projects": [
     {
       "id": 1,
-      "title": "Personal Portfolio Website",
-      "description": "A modern portfolio website featuring animated particles, smooth scrolling, and responsive design. Built with HTML, CSS, and JavaScript.",
-      "image": "project-portfolio.jpg",
-      "category": "frontend",
-      "technologies": ["HTML5", "CSS3", "JavaScript", "Bootstrap"],
-      "github": "https://github.com/username/portfolio",
-      "demo": "https://yourportfolio.com"
+      "title": "JerseyCTF Website",
+      "description": "In my senior year I built a website for JerseyCTF a cybersecurity capture the flag company.",
+      "image": "imgs/JCTF.png",
+      "category": "fullstack",
+      "technologies": ["HTML5", "CSS3", "JavaScript", "Bootstrap", "Vue.js"],
+      "github": "https://github.com/DanielB566/JerseyCTF",
+      "demo": "https://danielb566.github.io/JerseyCTF/"
     },
     {
       "id": 2,
-      "title": "E-commerce Platform",
-      "description": "A full-featured e-commerce platform with product listings, cart functionality, user authentication, and payment processing.",
-      "image": "project-ecommerce.jpg",
+      "title": "AP-CSA-Marlboro-Tech",
+      "description": "Me and 2 other students built a website for our AP CSA class.",
+      "image": "imgs/APCSA.png",
       "category": "fullstack",
-      "technologies": ["Vue.js", "Python", "Flask", "MongoDB", "Stripe API"],
-      "github": "https://github.com/username/ecommerce-app",
-      "demo": "https://your-ecommerce-demo.com"
+      "technologies": ["HTML5", "CSS3", "JavaScript", "Bootstrap", "Vue.js"],
+      "github": "https://github.com/anisenson/AP-CSA-Marlboro-Tech/tree/main",
+      "demo": "https://www.mrhsteched.com/pages/AP_CSA/index.html"
     },
     {
       "id": 3,
