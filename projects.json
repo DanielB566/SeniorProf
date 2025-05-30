@@ -54,9 +54,9 @@
       "id": 6,
       "title": "JerseyCTF NJCCIC Challenges 2025",
       "description": "I helped build CTFs (coding based) challeges for NJCCIC for the 2025 JerseyCTF.",
-      "image": "project-blog.jpg",
+      "image": "imgs/NJCCICJCTFLogo.png",
       "category": "backend",
-      "technologies": ["JavaScript", "Python", "PostgreSQL", "Node.js", "Vue.js"],
+      "technologies": ["XOR decryption", "Python", "PostgreSQL", "Linux filesystem", "PHP RCE"],
       "github": "https://github.com/jerseyctf/jerseyctf-njccic-challenges",
       "demo": "https://github.com/jerseyctf/jerseyctf-njccic-challenges/tree/JCTFV/web/Layers-Of-Lies"
     }
