@@ -33,12 +33,12 @@
     {
       "id": 4,
       "title": "Truck or Treat",
-      "description": "",
-      "image": "project-task-api.jpg",
+      "description": "At the beggining of my senior year I built a website for the MHS trunk or treak.",
+      "image": "imgs/TrunkorTreat.png",
       "category": "frontend",
       "technologies": ["HTML5", "CSS3", "JavaScript", "Bootstrap"],
-      "github": "https://github.com/username/task-api",
-      "demo": "https://api-docs.yourtaskmanager.com"
+      "github": "https://github.com/DanielB566/Trunk-or-Treat/tree/main",
+      "demo": "https://danielb566.github.io/Trunk-or-Treat/"
     },
     {
       "id": 5,
