@@ -32,11 +32,11 @@
     },
     {
       "id": 4,
-      "title": "Task Management API",
-      "description": "RESTful API for task management with user authentication, task creation, updating, and deletion capabilities.",
+      "title": "Truck or Treat",
+      "description": "",
       "image": "project-task-api.jpg",
-      "category": "backend",
-      "technologies": ["Python", "Django", "PostgreSQL", "JWT Auth"],
+      "category": "frontend",
+      "technologies": ["HTML5", "CSS3", "JavaScript", "Bootstrap"],
       "github": "https://github.com/username/task-api",
       "demo": "https://api-docs.yourtaskmanager.com"
     },
