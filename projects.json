@@ -42,17 +42,17 @@
     },
     {
       "id": 5,
-      "title": "Real-time Chat Application",
-      "description": "A chat application supporting real-time messaging, user presence, and file sharing using WebSockets.",
-      "image": "project-chat.jpg",
-      "category": "fullstack",
-      "technologies": ["Vue.js", "Node.js", "Express", "Socket.io", "MongoDB"],
-      "github": "https://github.com/username/chat-app",
-      "demo": "https://yourchatapp.com"
+      "title": "NJCCIC CTF",
+      "description": "Me and 3 other interns at NJCCIC built a cybersecurity CTF website with 5 challenges.",
+      "image": "imgs/NJCCICCTF.png",
+      "category": "backend",
+      "technologies": ["HTML5", "CSS3", "JavaScript", "Json", "express.js"],
+      "github": "https://github.com/samik-py/NJCCIC_CTF?tab=readme-ov-file",
+      "demo": "https://njccic-ctf.vercel.app/"
     },
     {
       "id": 6,
-      "title": "JerseyCTF NJCCIC Challenges 2025",
+      "title": "JerseyCTF Challenges 2025",
       "description": "I helped build CTFs (coding based) challeges for NJCCIC for the 2025 JerseyCTF.",
       "image": "imgs/NJCCICJCTFLogo.png",
       "category": "backend",
