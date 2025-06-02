@@ -236,7 +236,6 @@ body, html {
   font-size: 2.5rem;
   color: #64b4f4;
   position: relative;
-  opacity: 0;
   transform: translateY(30px);
   transition: all 0.8s ease;
 }
@@ -780,9 +779,65 @@ body, html {
   transition: transform 0.8s ease 0.2s;
 }
 
+
 .projects-section .section-title.visible::after {
   transform: scaleX(1);
 }
 
 
+/* Contact Section Styles */
+.contact-section {
+  min-height: 100vh;
+  background-color: #1a1a1a;
+  padding: 120px 0;
+  color: #ffffff;
+  position: relative;
+  overflow: hidden;
+}
 
+.contact-section .container {
+  height: auto;
+  background-color: transparent;
+}
+
+.contact-section .section-title {
+  text-align: center;
+  margin-bottom: 60px;
+  font-size: 2.5rem;
+  color: #64b4f4;
+  position: relative;
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.8s ease;
+}
+
+.contact-section .section-title::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: #64b4f4;
+  margin: 20px auto 0;
+  transform: scaleX(1);
+  transition: transform 0.8s ease 0.2s;
+}
+
+/* Media Queries for Contact Section */
+@media (max-width: 992px) {
+  .contact-section {
+    padding: 80px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-section .section-title {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-section .section-title {
+    font-size: 1.8rem;
+    margin-bottom: 40px;
+  }
+}
