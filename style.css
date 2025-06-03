@@ -7,6 +7,7 @@ body, html {
   overflow-x: hidden; /* Prevent horizontal scroll */
   overflow-y: auto; /* Allow vertical scrolling */
   font-family: 'Arial', sans-serif;
+  background-color: #121212;
 }
 
 /* Landing Page Styles */
@@ -1066,3 +1067,29 @@ body, html {
 }
 
 
+.footer {
+  margin-top: 100px;
+  text-align: center;
+  padding: 10px 0 20px;
+  background-color: #121212;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.footer .github-link {
+  display: inline-block;
+  margin-bottom: 10px;
+  font-size: 28px;
+  color: #ffffff;
+  transition: color 0.3s;
+}
+
+.footer .github-link:hover {
+  color: #888;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 14px;
+  opacity: 0.8;
+}
